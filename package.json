@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start-server": "set NODE_OPTIONS=--openssl-legacy-provider && ganache-cli --networkId 1337",
+    "deploy": "set NODE_OPTIONS=--openssl-legacy-provider && node scripts/deploy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -18,7 +20,8 @@
     "ethers": "^5.0.19",
     "hardhat": "^2.0.2",
     "parcel": "^2.0.0",
-    "sass": "^1.29.0"
+    "sass": "^1.29.0",
+    "dotenv": "^16.0.0"
   },
   "browserslist": [
     "> 5%"
